@@ -1,0 +1,40 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    max-height: 350px;
+}
+
+@media (min-width: 768px) {
+    .chart-container {
+        height: 350px;
+        max-height: 400px;
+    }
+}
+
+.lakers-gradient-text {
+    background: linear-gradient(90deg, #FDB927, #552583);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.nav-link:hover {
+    color: #FDB927;
+    border-color: #FDB927;
+}
+
+.tab-button.active {
+    background-color: #552583;
+    color: #FFFFFF;
+}

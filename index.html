@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DonarBe - Media Kit Interativo</title>
+    <link rel="icon" type="image/png" href="images/FBRNACODNB Logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <img src="images/FBRNACODNB Logo.png" alt="Logo DonarBe" class="h-8 w-8">
+                <span class="text-2xl font-black lakers-gradient-text">DonarBe</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#sobre" class="nav-link text-gray-600 border-b-2 border-transparent">Sobre</a>
+                <a href="#conteudo" class="nav-link text-gray-600 border-b-2 border-transparent">Conteúdo</a>
+                <a href="#publico" class="nav-link text-gray-600 border-b-2 border-transparent">Público</a>
+                <a href="#parcerias" class="nav-link text-gray-600 border-b-2 border-transparent">Parcerias</a>
+                <a href="#cupons" class="nav-link text-gray-600 border-b-2 border-transparent">Cupons</a>
+                <a href="#contato" class="nav-link text-gray-600 border-b-2 border-transparent">Contato</a>
+            </div>
+            <a href="#contato" class="hidden md:block bg-[#552583] text-white px-5 py-2 rounded-lg font-bold hover:bg-[#FDB927] transition-colors duration-300">Vamos Conversar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="container mx-auto px-6 py-20 md:py-32 text-center">
+            <div class="w-32 h-32 md:w-48 md:h-48 mx-auto bg-gradient-to-br from-[#FDB927] to-[#552583] rounded-full mb-6 flex items-center justify-center p-1">
+                 <div class="w-full h-full bg-white rounded-full">
+                    <img src="images/DonarBe01.png" alt="Foto de DonarBe" class="w-full h-full object-cover rounded-full">
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black text-gray-900 leading-tight">DONARBE</h1>
+            <p class="text-lg md:text-2xl mt-2 text-gray-600">Criador de Conteúdo de Entretenimento e Tech</p>
+            <h2 class="mt-4 text-2xl md:text-4xl font-bold lakers-gradient-text">"Cola no bigodudo!"</h2>
+        </section>
+
+        <section id="sobre" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Quem é o DonarBe?</h2>
+                    <div class="w-20 h-1 bg-[#FDB927] mx-auto mt-2"></div>
+                </div>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+                    <div class="text-lg text-gray-700 leading-relaxed">
+                        <p class="mb-4">Olá, tudo bem? Eu sou o DonarBe! Um criador de conteúdo apaixonado por tecnologia, games e, acima de tudo, por fazer a galera dar risada. Minha missão é simples: <strong class="text-[#552583]">entreter</strong>.</p>
+                        <p>Seja mostrando o unboxing de um produto tecnológico de um jeito que você nunca viu ou transformando um meme em vídeo, meu objetivo é criar uma conexão genuína e divertida com o público. Meu estilo é <strong class="text-[#552583]">engraçado, carismático e direto</strong>.</p>
+                    </div>
+                    <div class="bg-gray-100 p-8 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl text-gray-900 mb-4">O Personagem</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3 text-[#FDB927]">🥸</span>
+                                <div><strong class="block text-gray-800">Visual:</strong> Bigodinho curvado, regata dos Lakers e boné branco para trás. É minha marca registrada!</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-3 text-[#FDB927]">😄</span>
+                                <div><strong class="block text-gray-800">Postura:</strong> Sempre com um sorriso no rosto e uma piada na ponta da língua. A energia é lá em cima, pronta para o próximo "Furduncio!".</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conteudo" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Onde a Mágica Acontece</h2>
+                    <p class="max-w-2xl mx-auto mt-2 text-gray-600">Meu conteúdo é multiplataforma e pensado para cada formato, mas sempre com a mesma essência: dinamismo, humor e foco total em prender a atenção do espectador.</p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div id="tabs-container" class="flex flex-wrap justify-center gap-2 mb-8">
+                        <button data-target="youtube" class="tab-button active px-4 py-2 text-sm md:px-6 md:py-3 font-semibold text-gray-700 bg-gray-200 rounded-lg transition">YouTube</button>
+                        <button data-target="tiktok" class="tab-button px-4 py-2 text-sm md:px-6 md:py-3 font-semibold text-gray-700 bg-gray-200 rounded-lg transition">TikTok</button>
+                        <button data-target="instagram" class="tab-button px-4 py-2 text-sm md:px-6 md:py-3 font-semibold text-gray-700 bg-gray-200 rounded-lg transition">Instagram</button>
+                        <button data-target="lives" class="tab-button px-4 py-2 text-sm md:px-6 md:py-3 font-semibold text-gray-700 bg-gray-200 rounded-lg transition">Lives</button>
+                    </div>
+                    
+                    <div id="tabs-content" class="bg-white p-8 rounded-lg shadow-lg min-h-[200px]">
+                        <div id="youtube" class="tab-content">
+                            <h3 class="font-bold text-2xl text-[#552583] mb-2">Unboxing Tech</h3>
+                            <p class="text-gray-600 mb-4"><strong>Frequência:</strong> Segundas-feiras</p>
+                            <p class="text-gray-700">Apresento eletrônicos e produtos gamers de forma inovadora e engraçada, focando em uma análise útil, mas sem perder a piada. O objetivo é informar e divertir ao mesmo tempo.</p>
+                        </div>
+                        <div id="tiktok" class="tab-content hidden">
+                            <h3 class="font-bold text-2xl text-[#552583] mb-2">Memes e Vídeos Curtos</h3>
+                            <p class="text-gray-600 mb-4"><strong>Frequência:</strong> Todos os dias</p>
+                            <p class="text-gray-700">Conteúdo rápido, dinâmico e com alto potencial viral. O humor do cotidiano transformado em vídeos que prendem a atenção do início ao fim.</p>
+                        </div>
+                        <div id="instagram" class="tab-content hidden">
+                           <h3 class="font-bold text-2xl text-[#552583] mb-2">Memes e Stories</h3>
+                            <p class="text-gray-600 mb-4"><strong>Frequência:</strong> Todos os dias</p>
+                            <p class="text-gray-700">Além dos memes no feed, uso os Stories para interagir, divertir e animar os seguidores diariamente, criando uma comunidade próxima e engajada.</p>
+                        </div>
+                         <div id="lives" class="tab-content hidden">
+                            <h3 class="font-bold text-2xl text-[#552583] mb-2">Gameplay & Interação</h3>
+                            <p class="text-gray-600 mb-4"><strong>Frequência:</strong> A definir</p>
+                            <p class="text-gray-700">Momentos de descontração com gameplays ao vivo, onde a interação com o chat é a prioridade. É o espaço perfeito para divulgar patrocinadores de forma orgânica e divertida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publico" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">A Galera do Bigodudo</h2>
+                     <p class="max-w-2xl mx-auto mt-2 text-gray-600">Construí uma comunidade engajada que busca entretenimento de qualidade e recomendações autênticas de produtos e serviços.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-12">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow">
+                        <div class="text-4xl font-black text-[#552583]">500K+</div>
+                        <div class="text-gray-600 mt-1">Seguidores Totais</div>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow">
+                        <div class="text-4xl font-black text-[#552583]">3M+</div>
+                        <div class="text-gray-600 mt-1">Visualizações Mensais</div>
+                    </div>
+                     <div class="bg-gray-100 p-6 rounded-lg shadow">
+                        <div class="text-4xl font-black text-[#552583]">8.5%</div>
+                        <div class="text-gray-600 mt-1">Taxa de Engajamento</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <h3 class="text-xl font-bold text-center mb-4 text-gray-800">Distribuição por Gênero</h3>
+                        <div class="chart-container">
+                            <canvas id="genderChart"></canvas>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-center mb-4 text-gray-800">Distribuição por Idade</h3>
+                         <div class="chart-container">
+                            <canvas id="ageChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="parcerias" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Vamos Fazer um "Furduncio" Juntos?</h2>
+                     <p class="max-w-3xl mx-auto mt-2 text-gray-600">Busco parcerias com marcas que compartilham da minha energia para nos conectarmos com o público de forma criativa e autêntica, focando em <strong class="text-[#552583]">humor, autenticidade e performance.</strong></p>
+                </div>
+                <div class="max-w-5xl mx-auto">
+                    <h3 class="font-bold text-xl text-center mb-6 text-gray-800">Formatos de Colaboração</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                            <div class="text-3xl mb-3 text-[#FDB927]">📺</div>
+                            <h4 class="font-bold text-lg text-gray-900">Unboxing Patrocinado</h4>
+                            <p class="text-gray-600 text-sm">Apresentação divertida e detalhada de produtos no YouTube.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                            <div class="text-3xl mb-3 text-[#FDB927]">🎬</div>
+                            <h4 class="font-bold text-lg text-gray-900">Vídeo Dedicado</h4>
+                            <p class="text-gray-600 text-sm">Um vídeo com roteiro criativo totalmente focado na sua marca.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                            <div class="text-3xl mb-3 text-[#FDB927]">📱</div>
+                            <h4 class="font-bold text-lg text-gray-900">Ads em Vídeos Curtos</h4>
+                            <p class="text-gray-600 text-sm">Inserção da marca em conteúdos de alto potencial viral.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                            <div class="text-3xl mb-3 text-[#FDB927]">🤳</div>
+                            <h4 class="font-bold text-lg text-gray-900">Sequência de Stories</h4>
+                            <p class="text-gray-600 text-sm">Divulgação interativa e direta com a comunidade no Instagram.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                            <div class="text-3xl mb-3 text-[#FDB927]">🎮</div>
+                            <h4 class="font-bold text-lg text-gray-900">Live Patrocinada</h4>
+                            <p class="text-gray-600 text-sm">Divulgação orgânica de produtos e serviços durante gameplays.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                            <div class="text-3xl mb-3 text-[#FDB927]">🤝</div>
+                            <h4 class="font-bold text-lg text-gray-900">Embaixador da Marca</h4>
+                            <p class="text-gray-600 text-sm">Parcerias de longo prazo para uma associação contínua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cupons" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Meus Parceiros e Cupons</h2>
+                    <p class="max-w-3xl mx-auto mt-2 text-gray-600">Confira os descontos exclusivos que meus parceiros incríveis oferecerem para a galera do bigodudo!</p>
+                </div>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 text-center flex flex-col">
+                        <h3 class="font-black text-2xl text-gray-800">Max Titanium</h3>
+                        <p class="text-gray-500 mt-1 mb-4 flex-grow">Suplementos de alta performance.</p>
+                        <div class="bg-white border-2 border-dashed border-gray-300 rounded-lg p-3 mb-4">
+                            <span class="font-bold text-lg text-[#552583] tracking-wider" id="coupon-max">Max10donarbe</span>
+                        </div>
+                        <button data-coupon="Max10donarbe" class="copy-button w-full bg-[#552583] text-white px-5 py-3 rounded-lg font-bold hover:bg-[#FDB927] transition-colors duration-300">
+                            Copiar Cupom
+                        </button>
+                    </div>
+
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 text-center flex flex-col">
+                        <h3 class="font-black text-2xl text-gray-800">Dr. Peanut</h3>
+                        <p class="text-gray-500 mt-1 mb-4 flex-grow">A melhor pasta de amendoim.</p>
+                        <div class="bg-white border-2 border-dashed border-gray-300 rounded-lg p-3 mb-4">
+                            <span class="font-bold text-lg text-[#552583] tracking-wider" id="coupon-dr">BLDONARBE</span>
+                        </div>
+                        <button data-coupon="BLDONARBE" class="copy-button w-full bg-[#552583] text-white px-5 py-3 rounded-lg font-bold hover:bg-[#FDB927] transition-colors duration-300">
+                            Copiar Cupom
+                        </button>
+                    </div>
+
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 text-center flex flex-col">
+                        <h3 class="font-black text-2xl text-gray-800">Rei dos Coins</h3>
+                        <p class="text-gray-500 mt-1 mb-4 flex-grow">Moedas para seus jogos favoritos.</p>
+                        <div class="bg-white border-2 border-dashed border-gray-300 rounded-lg p-3 mb-4 flex items-center justify-center h-full">
+                            <span class="font-bold text-lg text-[#552583]">Desconto via link</span>
+                        </div>
+                        <a href="https://www.reidoscoins.com.br/?tracking=66bd2128f261f" target="_blank" class="w-full bg-[#FDB927] text-[#552583] px-5 py-3 rounded-lg font-bold hover:bg-[#441e69] hover:text-white transition-colors duration-300">
+                            Acessar Loja
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contato" class="bg-[#552583] text-white">
+        <div class="container mx-auto px-6 py-16 text-center">
+            <h2 class="text-4xl font-black">Nice! Vamos conversar?</h2>
+            <p class="text-lg mt-2 mb-8 max-w-xl mx-auto text-yellow-200">Estou pronto para criar projetos incríveis e de alta performance com a sua marca.</p>
+            <a href="mailto:email@exemplo.com" class="bg-[#FDB927] text-[#552583] px-10 py-4 rounded-lg font-bold text-lg hover:bg-white transition-colors duration-300">
+                Mande um E-mail
+            </a>
+            <div class="mt-10 text-yellow-200/80">
+                <p>Ou me encontre em <a href="https://www.instagram.com/_donarbe/" class="font-bold underline">Instagram</a></p>
+            </div>
+        </div>
+        <div class="border-t border-yellow-300/20 py-4">
+            <p class="text-center text-sm text-yellow-200/60">&copy; 2024 DonarBe. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
