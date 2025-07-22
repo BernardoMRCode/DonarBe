@@ -30,18 +30,6 @@ JavaScript (ES6+) - Para toda a interatividade da página.
 
 Chart.js - Para a criação dos gráficos de dados.
 
-📁 Estrutura do Projeto
-O projeto está organizado da seguinte forma para facilitar a manutenção e a localização de arquivos:
-
-/media-kit-donarbe/
-│
-├── 📄 index.html         # Arquivo principal com a estrutura da página
-├── 🎨 style.css          # Arquivo com os estilos personalizados
-├── ⚙️ script.js          # Arquivo com a lógica e interatividade
-│
-└── 🖼️ /images/
-    ├── 🖼️ DonarBe01.png          # Foto de perfil
-    └── 🖼️ FBRNACODNB Logo.png  # Logo da marca
 
 🚀 Como Executar Localmente
 Para visualizar o projeto em sua máquina local, siga estes passos:
